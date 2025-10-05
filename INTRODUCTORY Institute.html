@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Instititute</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(bgr.jpg);
+        }
+        header{
+        background-color: #f00808;
+        color: white;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    form{
+            text-align: center;
+    } 
+    .about{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,);
+        gap: 30px;
+    }
+    .about h1{
+        color: #f00808;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border: chartreuse;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1);
+        background-color: #0ae3eb;
+    }
+    .imgh{
+        background-color: rgb(18, 26, 113);
+        border-radius: 10px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 600px;
+        margin: auto;
+        height: 300px;
+        padding: auto;
+    }
+    .imgh img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    .imgh img:hover{
+        transform: scale(1.1);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    h2{
+        color: #f00808;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+    .links{
+        text-align: center;
+        color-scheme: dark;
+        margin: 20px;
+        border: #f00808;
+    }
+    </style>
+</head>
+<body>
+    <div class="intro" id="intro">
+        <header>
+            <h1>AR Institute</h1>
+           <nav>
+            <ul>
+                <li><a href="About Courses.html">Cources</a></li>
+                <li><a href="Regester.html">Regester now</a></li>
+            </ul>
+           </nav>
+        </header>
+    </div>
+
+    <div class="about">
+       <h1 style="text-align: center;"><marquee>Know more about Institute</marquee></h1>
+        <div class="imgh">
+            <h2>Placement data</h2>
+            <img src="Placement.jpeg">
+        </div>
+        <div class="imgh">
+            <h2>Results that got by AR Instititute</h2>
+            <img src="Results.jpeg">
+        </div>
+        <div class="imgh">
+            <h2>Experienced Faculties</h2>
+            <img src="EXP fac.jpg">
+        </div>
+        <div class="imgh">
+            <h2>Infrastructure & Facilities </h2>
+            <img src="lab.jpg">
+        </div>
+    </div>
+
+    <div class="links">
+        <form action="About Courses.html">
+        <input type="submit" value="About Course">
+        </form>
+
+         <form action="Regester.html">
+        <input type="submit" value="Regester now">
+         </form>
+    </div>
+</body>
+</html>
